@@ -17,3 +17,9 @@ for line in sys.stdin:
         # what we output here will be the input for the
         # Reduce step, i.e. the input for reducer.py
         print('%s\t%s' % (word, 1))
+
+
+# chmod +x mapper.py
+# chmod +x reducer.py
+#cat word_count_data.txt | python3 mapper.py
+#cat word_count_data.txt | python3 mapper.py | sort -k1,1 | python3 reducer.py
